@@ -15,10 +15,11 @@ tasks:
   - init: >
       bundle install &&
       yarn install &&
-      rake db:create
+      rake db:create &&
+      git clone https://github.com/tesssie/gitpod-react.git /workspace
+
     command: >
-      rails server -b 0.0.0.0
-      yarn build
+      rails server -b 0.0.0.0 &&
       yarn start
 
 vscode:
