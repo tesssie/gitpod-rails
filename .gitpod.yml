@@ -14,7 +14,6 @@ ports:
 tasks:
   - init: >
       bundle install &&
-      yarn install &&
       rake db:create &&
       git clone https://github.com/tesssie/gitpod-react.git
 
