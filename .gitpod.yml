@@ -8,6 +8,8 @@ ports:
   # PostgreSQL server
   - port: 5432
     onOpen: ignore
+  - port: 3001
+    onOpen: open-preview
 
 tasks:
   - init: >
@@ -16,6 +18,8 @@ tasks:
       rake db:create
     command: >
       rails server -b 0.0.0.0
+      yarn build
+      yarn start
 
 vscode:
   extensions:
