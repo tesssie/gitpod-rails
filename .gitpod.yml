@@ -16,7 +16,7 @@ tasks:
       bundle install &&
       yarn install &&
       rake db:create &&
-      git clone https://github.com/tesssie/gitpod-react.git /workspace
+      git clone https://github.com/tesssie/gitpod-react.git
 
     command: >
       rails server -b 0.0.0.0 &&
