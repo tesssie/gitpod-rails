@@ -19,9 +19,7 @@ tasks:
       git clone https://github.com/tesssie/gitpod-react.git
 
     command: >
-      rails server -b 0.0.0.0 &&
-      yarn start
-
+      rails server -b 0.0.0.0 
 vscode:
   extensions:
     - rebornix.ruby
