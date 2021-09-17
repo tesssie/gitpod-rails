@@ -14,6 +14,7 @@ ports:
 tasks:
   - init: >
       git config core.sparseCheckout true &&
+      git sparse-checkout init --cone &&
       bundle install &&
       rake db:create &&
       git clone https://github.com/tesssie/gitpod-react.git
